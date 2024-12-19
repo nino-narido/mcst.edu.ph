@@ -2,97 +2,207 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mandaluyong College of Science and Technology is committed to excellence in education, offering innovative programs in science, technology, and more.">
+  <meta name="keywords" content="Mandaluyong College, Science, Technology, Education, Philippines">
+  <meta property="og:title" content="Mandaluyong College of Science and Technology">
+  <meta property="og:description" content="Empowering Futures Through Science and Technology.">
+  <meta property="og:image" content="/images/hero-section.png">
   <title>Mandaluyong College of Science and Technology</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://api.fontshare.com/v2/css?f[]=erode@400,500,600&f[]=stardom@400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/mcst-logo.png">
+  <script type="module" src="/src/main.js"></script>
+  <link href="/style.css" rel="stylesheet">
 </head>
-
-<body class="body-ctn">
-  <header class="header-ctn">
-    <div class="header__content">
-      <img class="header__img" src="mcst.png" alt="MCST Logo">
-    </div>
-    <div>
-      <h1 class="header__name">Mandaluyong College of Science and Technology</h1>
-    </div>
-    <div class="dropdown-ctn">
-    <button class="dropdown-btn">Menu</button>
-      <div class="dropdown-content">
-        <a href="#About">About</a>
-        <a href="#Philosophy">Philosophy</a>
-        <a href="#Mission">Mission</a>
-        <a href="#Vision">Vision</a>
-        <a href="#Goals">Goals</a>
-        <a href="#Values">Core Values</a>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <header class="bg-blue-900 text-white py-2">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-4">
+        <img src="/images/mcst-logo.png" alt="MCST Logo" class="h-20 w-auto">
+        <h1 class="text-lg sm:text-xl font-bold">Mandaluyong College of Science and Technology</h1>
       </div>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#about" class="hover:text-yellow-400">About Us</a>
+        <a href="#programs" class="hover:text-yellow-400">Programs Offered</a>
+        <a href="#admissions" class="hover:text-yellow-400">Admissions Info</a>
+        <a href="#apply" class="hover:text-yellow-400">Apply</a>
+      </nav>
+      <button 
+        class="md:hidden text-white" 
+        id="menu-toggle" 
+        aria-label="Toggle Navigation" 
+        aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <nav class="bg-blue-800 p-4 space-y-2">
+        <a href="#about" class="block text-white hover:text-yellow-400">About Us</a>
+        <a href="#programs" class="block text-white hover:text-yellow-400">Programs Offered</a>
+        <a href="#admissions" class="block text-white hover:text-yellow-400">Admissions Info</a>
+        <a href="#apply" class="block text-white hover:text-yellow-400">Apply</a>
+      </nav>
     </div>
   </header>
-  <main class="main-ctn">
-    <section class="feature-ctn">
-      <div class="features__slideshow">
-        <div class="slideshow__slide fade">
-          <img class="slide__img" src="info.jpg">
+
+  <section class="relative h-[600px] bg-cover bg-center" style="background-image: url('/images/hero-section.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-6 sm:px-12">
+      <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Empowering Futures <br> Through Science and <br> Technology</h2>
+      <p class="text-sm text-gray-200 max-w-3xl">
+        At Mandaluyong College of Science and Technology, we are committed to nurturing excellence in education and innovation. Our programs in Information Systems, Mathematics, and Communication are designed to equip students with the skills needed for a successful future.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">Core Values That Drive Excellence at Mandaluyong College of Science and Technology</h2>
+        <p class="text-lg">At MCST, we are committed to genuine public service and fostering care within our community. Our core values of discipline, action over words, nationalism, and excellence guide us in shaping responsible and innovative leaders.</p>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+        <img src="/images/feature.jpg" alt="Feature Image" class="w-full md:w-3/4 mx-auto rounded-lg">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Our Commitment to Quality Education and Innovation</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-12">At Mandaluyong College of Science and Technology, we strive to provide accessible, high-quality education that empowers our students. Our dedication to advancing instruction and research ensures that we remain at the forefront of academic excellence.</p>
+  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <img src="/images/collaboration.svg" alt="Collaborating Icon" class="h-16 w-16 mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2">Collaborating for a Brighter Future</h3>
+          <p class="text-gray-700">We actively collaborate with stakeholders to enhance educational outcomes.</p>
         </div>
-        <div class="slideshow__slide fade">
-          <img class="slide__img" src="comm.jpg">
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <img src="/images/improve.svg" alt="Continuous Improvement Icon" class="h-16 w-16 mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2">Continuous Improvement in Education</h3>
+          <p class="text-gray-700">Our focus on continuous improvement drives us to innovate and adapt.</p>
         </div>
-        <div class="slideshow__slide fade">
-          <img class="slide__img" src="math.jpg">
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <img src="/images/research.svg" alt="Research and Instruction Icon" class="h-16 w-16 mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2">Fostering Excellence in Research and Instruction</h3>
+          <p class="text-gray-700">We prioritize research initiatives that contribute to societal development.</p>
         </div>
       </div>
-    </section>
-    <section class="intro-ctn sec" id="About">
-      <h1 class="intro__msg">Welcome to the <span class="txt-highlight">Mandaluyong College of Science and Technology</span>, a locally funded university owned by the <span class="txt-highlight">City Government of Mandaluyong</span>.</h1>
-      <button class="btn-style">Read More</button>
-    </section>
-    <section class="philosophy-ctn sec" id="Philosophy">
-      <h1 class="pmvcg__title"><span class="txt-highlight">Philosophy</span></h1>
-      <p class="pmv__body">Mandaluyong College of Science and Technology advocates the culture of excellence in science and technology that is anchored on the principles of quality instruction, dynamic research and innovation, continuous improvement, public service and nationalism.</p>
-    </section>
-    <section class="mission-ctn sec" id="Mission">
-      <h1 class="pmvcg__title"><span class="txt-highlight">Mission</span></h1>
-      <p class="pmv__body">To cultivate a culture of excellence in Science and Technology pursuing the improvement of the quality of life of every Mandalenyo to bring about the city's sustainable development and resiliency towards the nation's building.</p>
-    </section>
-    <section class="vision-ctn sec" id="Vision">
-      <h1 class="pmvcg__title"><span class="txt-highlight">Vision</span></h1>
-      <p class="pmv__body">A college of distinction in Science and Technology committed to produce high calibre and employable graduates.</p>
-    </section>
-    <section class="goals-ctn sec" id="Goals">
-      <h1 class="pmvcg__title"><span class="txt-highlight">Goals</span></h1>
-      <ol class="cg__body">
-        <li>1. Provide Mandalenyos access to quality higher education.</li><br>
-        <li>2. Support optimum advancement in instruction, technology, research, innovation, and resource generation.</li><br>
-        <li>3. Collaborate between and among various educational, technical, and professional stakeholders for genuine public service.</li><br>
-        <li>4. Foster institutional effectiveness and efficiency for continuous improvement and total quality management.</li><br>
-        <li>5. Produce graduates who are locally and internationally competent with high sense of nationalism.</li>
-      </ol>
-    </section>
-    <section class="core-ctn sec" id="Values">
-      <h1 class="pmvcg__title"><span class="txt-highlight">Core Values</span></h1>
-      <ul class="core__body">
-        <li>Mandaluyong College of Science and Technology Core Values represents the shared beliefs of the Mandalenyo. These shared beliefs are captured in the four ideals that define a genuine Mandalenyo. As an institution, MCST upholds the values of:</li><br>
-        <li><span class="txt-highlight">Naglilingkod</span> - MCST not only promotes, but also puts forward provision of genuine service to the general public.</li><br>
-        <li><span class="txt-highlight">Kumakalinga</span> - MCST is a prime mover in caring and nurturing people, the environment, and the country.</li><br>
-        <li><span class="txt-highlight">Disiplinado</span> - MCST upholds integrity fastened on the tenets of responsibility and accountability.</li><br>
-        <li><span class="txt-highlight">Gawa Hindi Salita</span> - MCST, as an empowered tertiary education institution shall be known for what it will do, and not for what it just says.</p><br>
-        <li><span class="txt-highlight">Makabansa</span>- Advocates high sense of nationalism through civic mindness and genuine concern for general welfare and greater good.</li><br>
-        <li><span class="txt-highlight">Kahusayan</span> - Initiates and sustain academic excellence, high performance and achievement, total quality management and effective e-governance and leadership.</li>
-      </ul>
-    </section> 
-  </main>
-  <footer class="footer-ctn">
-    <div class="footer__content-1">
-      <h3 class="footer__title">Mandaluyong College of Science and Technology</h3>
-      <p class="footer__address">Welfareville Compound, Mandaluyong City, 1550, Metro Manila</p>
-      <p class="footer__msg">Mandaluyong College of Science and Technology, a locally funded university owned by the City Government of Mandaluyong.</p>
-      <button class="btn-style">Enroll Now</button>
     </div>
-    <div class="footer__content-2">
-      <img class="footer__img" src="mcst.png" alt="MCST Logo">
+  </section>
+
+  <section class="py-16">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl font-bold mb-4">Join Us at MCST Today!</h2>
+        <p class="text-lg text-gray-700">Take the first step towards a brighter future by applying to Mandaluyong College of Science and Technology. Discover our innovative programs designed to equip you with the skills needed for success in today's dynamic job market.</p>
+      </div>
+      <div class="md:w-1/2 flex flex-col md:flex-row md:justify-end space-y-4 md:space-y-0 md:space-x-4">
+        <button class="bg-blue-900 text-white py-3 px-6 rounded-lg hover:bg-yellow-400 transition duration-300">Apply</button>
+        <button class="border border-black text-black py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300">Learn More</button>
+      </div>
     </div>
-  </footer>
-  <script src="main.js"></script>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+      <p class="text-lg text-gray-700 mb-8">We're here to assist you with any inquiries.</p>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <div class="mb-6">
+            <div class="flex items-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <h3 class="text-xl font-semibold">Email</h3>
+            </div>
+            <p class="text-gray-700">Reach us anytime via email.</p>
+            <p class="text-blue-500">mcst@mandaluyong.gov.ph</p>
+          </div>
+  
+          <div class="mb-6">
+            <div class="flex items-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <h3 class="text-xl font-semibold">Phone</h3>
+            </div>
+            <p class="text-gray-700">Call us for immediate support.</p>
+            <p class="text-blue-500">287160352</p>
+          </div>
+  
+          <div>
+            <div class="flex items-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <h3 class="text-xl font-semibold">Office</h3>
+            </div>
+            <p class="text-gray-700">Welfareville Compound, Barangay Addition Hills, Mandaluyong City, PH</p>
+            <a href="#" class="text-blue-500 hover:underline">Find Us &gt;</a>
+          </div>
+        </div>
+        <div class="hidden md:block bg-gray-200 rounded-lg">
+          <img src="/images/office.jpg" alt="Map Placeholder" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between px-6">
+      <div class="mb-6 md:mb-0">
+        <img src="/images/mcst-logo.png" alt="MCST Logo" class="h-16 w-auto">
+        <p class="mt-4">Address:</p>
+        <p>Welfareville Compound, Barangay Addition Hills, Mandaluyong City 1550</p>
+        <p class="mt-4">Contact:</p>
+        <p>287160352</p>
+        <p>mcst@mandaluyong.gov.ph</p>
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="text-white hover:text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.897 3.777-3.897 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+            </svg>
+          </a>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between md:space-x-16">
+      <div>
+        <h4 class="font-semibold mb-2">Admissions Info</h4>
+        <a href="#" class="block text-gray-300 hover:text-yellow-400">Course Offerings</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Contact Us</h4>
+        <a href="#" class="block text-gray-300 hover:text-yellow-400">Events Calendar</a>
+        <a href="#" class="block text-gray-300 hover:text-yellow-400">News Updates</a>
+        <a href="#" class="block text-gray-300 hover:text-yellow-400">Career Opportunities</a>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white-800 py-4 mt-8">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <p class="text-gray-400">&copy; 2024 MCST. All rights reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="text-gray-400 hover:text-yellow-400">Privacy Policy</a>
+        <a href="#" class="text-gray-400 hover:text-yellow-400">Terms of Service</a>
+        <a href="#" class="text-gray-400 hover:text-yellow-400">Cookies Settings</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
