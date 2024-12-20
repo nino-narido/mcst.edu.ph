@@ -3,6 +3,14 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   // Configuration options (if needed)
   css: {
-    postcss: './postcss.config.js', // Link to PostCSS config file (optional if you don't have custom setup)
+    postcss: './postcss.config.js',
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        about: 'src/about.html', // Add additional HTML files here
+      },
+    },
   },
 });
