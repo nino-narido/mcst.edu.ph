@@ -13,6 +13,7 @@ export default defineConfig({
         programs: 'src/programs.html',
         informationsystems: 'src/informationsystems.html',
         communication: 'src/communication.html',
+        mathematics: 'src/mathematics.html',
       },
     },
   },
